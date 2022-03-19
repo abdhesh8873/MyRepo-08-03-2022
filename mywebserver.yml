@@ -1,6 +1,6 @@
 ---
--hosts: all
--tasks:
+- host: all
+  tasks:
    -name: i want to install webserver in my hosts
    -apt:
       -name: apache2
