@@ -1,7 +1,7 @@
 ---
-- host: all
+- hosts: all
   tasks:
-   -name: i want to install webserver in my hosts
-   -apt:
-      -name: apache2
-      -state: present
+  - name: i want to install webserver in my hosts
+    apt:
+      name: apache2
+      state: present
