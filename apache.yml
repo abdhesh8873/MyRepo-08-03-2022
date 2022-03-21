@@ -6,3 +6,9 @@
     apt:
       name: apache2
       state: present
+    then: ansible_os_family =="Debian"
+  - name: i want to make always on apache2 on ubuntu nodes
+    apt: 
+      name: apache2
+      state: started
+
