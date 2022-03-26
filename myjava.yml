@@ -4,13 +4,13 @@
   tasks:
     - name: i want to install java on ubuntu server
       apt:
-        name: "{{mywebpackforubuntu}}"
+        name: "{{myjavapackforubuntu}}"
         state: present
       when: ansible_os_family =="Debian"
    
    
     - name: i want to install java on RedHat server
       yum: 
-       name: "{{mywebpackforredhat}}"
+       name: "{{myjavapackforredhat}}"
        state: present
       when: ansible_os_family =="RedHat"
