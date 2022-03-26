@@ -2,8 +2,3 @@
 172.31.19.232
 172.31.14.129
 
-[apache:vars]
-mywebpackforubuntu= apache2
-mywebpackforredhat= httpd
-mywebpackforubuntu= openjdk-8-jdk
-mywebpackforredhat= java-1.8.0-openjdk
