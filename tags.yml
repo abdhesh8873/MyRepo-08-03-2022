@@ -7,8 +7,7 @@
         name: gitaaa
         state: present
       tags: mygit
-      ignore_errors: yes
-      
+
     - name: install tree
       apt: 
         name: tree
