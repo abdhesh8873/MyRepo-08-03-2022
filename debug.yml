@@ -4,9 +4,9 @@
   become: yes
   tasks: 
     - name: i want to debug the command
-      command: hostname -fbbn
+      command: hostname -f
       register: myResult
-      ignore_errors: yes
+      
     - name: i want to display tasks  Result 
       debug:
          msg: "{{myResult}}" 
