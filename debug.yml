@@ -4,7 +4,7 @@
   become: yes
   tasks: 
     - name: i want to debug the command
-      command: hostname -f
+      command: hostname -fbbn
       register: myResult
 
     - name: i want to display tasks  Result 
