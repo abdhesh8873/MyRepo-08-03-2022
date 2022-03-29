@@ -6,7 +6,7 @@
     - name: i want to debug the command
       command: hostname -fbbn
       register: myResult
-
+      ignore_errors: yes
     - name: i want to display tasks  Result 
       debug:
          msg: "{{myResult}}" 
