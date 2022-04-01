@@ -1,2 +1,14 @@
 ---
 # tasks file for mywebrole
+
+    - name: i want to install mywebserver
+      apt:
+        name: apache2
+        state: present
+      notify: restartwebserver
+
+    - name: i want to copy file i to ansible node
+      template:
+        src: myindex.j2
+        dest: /var/www/html/index.html
+      notify: restartwebserver
