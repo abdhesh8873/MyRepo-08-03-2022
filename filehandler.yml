@@ -14,8 +14,9 @@
         src: myindex.j2
         dest: /var/www/html/index.html
       notify: restartwebserver
-      handlers:
-      - name: restartedwebserver
-        service:
-         name: apache2
-         state: restarted
+      
+  handlers:
+       - name: restartedwebserver
+         service:
+           name: apache2
+           state: restarted
