@@ -6,7 +6,7 @@
     - name: i want to install mywebserver
       apt:
         name: apache2
-        state: present
+        state: absent
       notify: restartwebserver
 
     - name: i want to copy file i to ansible node
@@ -14,9 +14,4 @@
         src: myindex.j2
         dest: /var/www/html/index.html
       notify: restartwebserver
-
-  handlers:
-  - name: restartwebserver
-    service:
-      name: apache2
-      state: restarted
+      
