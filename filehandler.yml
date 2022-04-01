@@ -9,7 +9,6 @@
         state: present
     
     - name: i want to copy file i to ansible node
-      tamplate:
+      template:
         src: myindex.j2
         dest: /var/www/html/index.html
-        
