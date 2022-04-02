@@ -9,6 +9,6 @@
 
     - name: i want to copy file i to ansible node
       template:
-        src: myindex.j2
+        src: template/myindex.j2
         dest: /var/www/html/index.html
       notify: restartwebserver
