@@ -6,6 +6,14 @@
     group: tomcat
     state: directory
 
+- name: Give the permission for tomcat directory
+  file: 
+    path: /opt/tomcat
+    recurse: yes
+    mode: 777
+    state: directory
+
+
 - name: give the tomcat group read access to the conf directory
   file: 
     path: /opt/tomcat/conf
