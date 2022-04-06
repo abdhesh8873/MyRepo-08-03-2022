@@ -10,7 +10,7 @@
   file: 
     path: /opt/tomcat
     recurse: yes
-    mode: 777
+    mode: u+rwx,g+rwx,o+rwx
     state: directory
 
 
