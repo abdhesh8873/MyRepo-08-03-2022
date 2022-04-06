@@ -13,5 +13,5 @@
 - name: i want to extract zip file
   command:
     cmd: sudo tar xzvf /home/ubuntu/apache-tomcat-8.5.5.tar.gz -C /opt/tomcat --strip-components=1
-    craetes: /opt/tomcat/LICENSE
+    creates: /opt/tomcat/LICENSE
   
